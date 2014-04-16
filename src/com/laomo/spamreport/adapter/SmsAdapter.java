@@ -29,7 +29,7 @@ public class SmsAdapter extends BaseAdapter {
     /**
      * 删除已选中的短信
      */
-	public void deleteSms(int position) {
+    public void deleteSms(int position) {
 	list.remove(position);
 	notifyDataSetChanged();
     }

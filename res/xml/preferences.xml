@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:dialogTitle="运营商选择"
+        android:entries="@array/list_operator"
+        android:entryValues="@array/list_operator_value"
+        android:key="@string/key_list_operator"
+        android:summary="不同运营商垃圾短信举报方式不同"
+        android:title="运营商" />
+    
+    <ListPreference
+        android:dialogTitle="短信发送方式"
+        android:defaultValue="1"
+        android:entries="@array/list_send"
+        android:entryValues="@array/list_send_value"
+        android:key="@string/key_list_send"
+        android:summary="举报垃圾短信需要发送一条免费短信"
+        android:title="短信发送方式" />
+
+    <CheckBoxPreference
+        android:key="@string/key_auto_delete"
+        android:defaultValue="true"
+        android:title="举报完成自动删除" />
+
+    <com.laomo.spamreport.widget.AboutDialogPreference
+        android:dialogMessage="垃圾短信举报 By 老默"
+        android:dialogTitle="关于"
+        android:key="@string/key_about"
+        android:negativeButtonText="cancel"
+        android:positiveButtonText="ok"
+        android:title="关于" />
+
+</PreferenceScreen>

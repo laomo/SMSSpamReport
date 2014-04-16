@@ -3,7 +3,7 @@ package com.laomo.spamreport.bean;
 public class SmsInfo {
 
     public String id;
-    public long threadId;
+    public String threadId;
     public String presonName;
     public long person;
     public String address;
